@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../../api/api";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/NavTest";
 import { Link,useNavigate } from "react-router-dom";
 const SignUpPage = () => {
 const navigate = useNavigate();
