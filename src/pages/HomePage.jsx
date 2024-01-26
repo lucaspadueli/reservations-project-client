@@ -1,28 +1,22 @@
 import LogoHome from "../assets/cordown.jpeg";
 import Logo from "../assets/coworking-high-resolution-logo-black-transparent.png";
+import NavBar from "../components/NavBar";
 const HomePage = () => {
 
 
   return (
     <div className="h-screen">
-        <nav className="bg-gray-800 h-12 ">
-              
-          <ul className="flex flex-row font-serif text-zinc-300 py-2 justify-end">
-            <li className="mr-4 my-2 text-xs">Sign up</li>
-            <li className="mr-4 my-2 text-xs">Login</li>
-          </ul>
-        </nav>
         
-        <div className="container">
-        <div className="flex flex-row items-center ">
-        <img className="w-1/5 py-2 ml-4" src = {Logo} alt= "logo" />
-        <p className="ml-8 font-serif" > The best place to work</p>
-        </div>
+        <NavBar/>
         
-        <img className="w-96 ml-2 rounded-lg" src = {LogoHome} alt = "homelogo"/>
-        </div>
+        <div className="bg-sky-700/50 fixed top-12 left-0 right-0">
+        <img className="max-w-14 ml-4 py-2  " src = {Logo} alt= "logo" />
+        </div>    
+       
 
-        <div className="w-80 mx-auto h-96 overflow-auto">
+        <div className="w-80 mx-auto h-4/6 overflow-auto my-8">
+        <p className="text-center text-2xl font-serif mb-4" > The best place to work</p>
+        <img className="w-96 mx-auto rounded-lg" src = {LogoHome} alt = "homelogo"/>
           <p className="text-gray-600 font-serif text-lg text-justify">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend mi in nulla posuere. Potenti nullam ac tortor vitae purus faucibus. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Egestas dui id ornare arcu odio ut sem nulla pharetra. Scelerisque felis imperdiet proin fermentum leo vel. Sed ullamcorper morbi tincidunt ornare massa eget egestas. In ante metus dictum at tempor. Pellentesque pulvinar pellentesque habitant morbi. Facilisi morbi tempus iaculis urna id. Diam ut venenatis tellus in.
 
@@ -32,8 +26,8 @@ Congue quisque egestas diam in arcu cursus euismod. Mollis aliquam ut porttitor 
           </p>
         </div>
         
-    <div className="my-4">
-    <h3 className="text-center text-2xl">Find the best Rooms</h3>
+    <div className="my-4 flex justify-center">
+    <button className="w-2/5 font-medium text-lg text-white font-serif border border-black bg-sky-500 hover:bg-sky-700 rounded-full p-2"> Find out our Rooms</button>
     </div>
       
     

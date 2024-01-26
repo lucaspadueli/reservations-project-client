@@ -4,6 +4,17 @@ class RentApi {
     constructor(baseURL){
         this.api = axios.create({baseURL})
     }
+
+    signUp = async ({username,email,password}) => {
+        try {
+            const {data} = await this.api.post('/signup', {username,email,password});
+            console.log(data) ;
+        } catch (error) {
+            console.log(error);
+            throw error;
+        }
+    }
+
     getAllUsers = async () =>{
         try {
            const {data} = await this.api.get('/get-users');
